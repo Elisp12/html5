@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eliseu">
+    <meta name="description" content="lista de documnetos">
+    <meta name="keywords" content="htmls5, tecnologias"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="POST" class="formlogin">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite um email válido" required>
+            <br>
+            
+            <label for="quant">quantidade</label>
+            <input type="number" min="0" max="1000" id="quant" required>
+            <br>
+            
+            <label for="data">Data</label>
+            <input type="date" min="2020-11-01" max="2030-11-01">
+
+            <p>Sexo</p>
+            <label>Masculino
+                <input type="radio" name="sexo" value="m">
+            </label>
+            <label>Feminino
+                <input type="radio" name="sexo" value="f">
+            </label>
+            <br>
+            
+            <label for="estado">Estado</label>
+            <select name=""estado id="estado">
+                <option value="0">Selecione</option>
+                <option value="sp">São Paulo</option>
+                <option value="ba">Bahia</option>
+                <option value="sg">Sergipe</option>
+            </select>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend> Área de interesse</legend>
+            <label><input type="checkbox" name="html" value="html">HTML</label>
+
+            <label><input type="checkbox" name="css" value="css"> CSS</label>
+
+            <label><input type="checkbox" name="js" id="js">Java Script</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Menssagem</legend>
+            <textarea style="resize: none;" name="msg" cols="30" rows="10"></textarea>
+
+            <textarea style="resize: none;" name="contrato"  cols="30" rows="10" readonly>Aqui entra o texo do contrato que precisa ser aceito</textarea>
+            <label><input type="checkbox"> Li e Aceito</label>
+        </fieldset>
+        <input type="submit" value="mandar">
+    </form>
+</body>
+</html>
